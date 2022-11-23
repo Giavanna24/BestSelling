@@ -3,7 +3,7 @@ public class Books extends BestSelling{
     private String Language;
     private String Genre;
 
-    public Books(String name, String year, int sales, String author, String language, String genre) {
+    public Books(String name, int year, int sales, String author, String language, String genre) {
         super(name, year, sales);
         Author = author;
         Language = language;

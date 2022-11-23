@@ -1,9 +1,9 @@
 public class BestSelling {
      private String name;
-    private String year;
+    private int year;
     private int sales;
 
-    public BestSelling(String name, String year, int sales) {
+    public BestSelling(String name, int year, int sales) {
         this.name = name;
         this.year = year;
         this.sales = sales;
@@ -17,11 +17,11 @@ public class BestSelling {
         this.name = name;
     }
 
-    public String getYear() {
+    public int getYear() {
         return year;
     }
 
-    public void setYear(String year) {
+    public void setYear(int year) {
         this.year = year;
     }
 
