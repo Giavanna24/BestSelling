@@ -33,7 +33,7 @@ public class BestSelling {
         this.sales = sales;
     }
 
-    void describeData(){
+    void describeSelf(){
         System.out.println("The best selling item is " + name + " it was made in " + year + " and had " + sales + " sales. ");
     }
 }
