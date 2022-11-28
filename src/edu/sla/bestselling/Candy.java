@@ -1,3 +1,5 @@
+package edu.sla.bestselling;
+
 public class Candy extends BestSelling{
 
     private String brand;

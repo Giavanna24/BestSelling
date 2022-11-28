@@ -1,3 +1,5 @@
+package edu.sla.bestselling;
+
 public class BestSelling {
      private String name;
     private int year;
