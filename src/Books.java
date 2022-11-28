@@ -34,7 +34,8 @@ public class Books extends BestSelling{
         Genre = genre;
     }
 
-    void describeData(){
-        System.out.print("My name is" + Author + ", the book is in " + Language + " and the genre is" + Genre);
+    void describeSelf(){
+        super.describeSelf();
+        System.out.print("My name is " + Author + ", the book is in " + Language + " and the genre is " + Genre +".");
     }
 }

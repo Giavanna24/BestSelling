@@ -34,6 +34,6 @@ public class BestSelling {
     }
 
     void describeSelf(){
-        System.out.println("The best selling item is " + name + " it was made in " + year + " and had " + sales + " sales. ");
+        System.out.println("The best selling item is " + name + ", it was made in " + year + " and had " + sales + " sales. ");
     }
 }

@@ -27,7 +27,8 @@ public class Candy extends BestSelling{
         this.country = country;
     }
 
-    void describeData(){
-        System.out.println("This candy was made by " + brand + " in " + country);
+    void describeSelf(){
+        super.describeSelf();
+        System.out.println("This candy was made by " + brand + " in " + country + ".");
     }
 }
