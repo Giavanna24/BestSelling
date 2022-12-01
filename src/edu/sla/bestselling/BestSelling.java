@@ -1,14 +1,28 @@
 package edu.sla.bestselling;
 
+import java.util.ArrayList;
+
 public class BestSelling {
-     private String name;
-    private int year;
-    private int sales;
+    private static ArrayList<BestSelling> allBestSelling = new ArrayList<>();
+
+        private  String name;
+        private  int year;
+        private  int sales;
+
 
     public BestSelling(String name, int year, int sales) {
         this.name = name;
         this.year = year;
         this.sales = sales;
+        allBestSelling.add(this);
+    }
+
+    public static ArrayList<BestSelling> getAllBestSelling() {
+        return allBestSelling;
+    }
+
+    public static void setAllBestSelling(ArrayList<BestSelling> allBestSelling) {
+        BestSelling.allBestSelling = allBestSelling;
     }
 
     public String getName() {
