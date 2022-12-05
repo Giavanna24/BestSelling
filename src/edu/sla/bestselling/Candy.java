@@ -29,8 +29,10 @@ public class Candy extends BestSelling{
         this.country = country;
     }
 
-    void describeSelf(){
-        super.describeSelf();
-        System.out.println("This candy was made by " + brand + " in " + country + ".");
+    @Override
+    public String toString() {
+        return " The best selling item is " + getName() + ". This candy was made by " + brand  +
+                " in " + country  + ". It was made in "  + getYear() + ". It had " + getSales() + " sales."
+                ;
     }
 }

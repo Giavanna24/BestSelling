@@ -36,8 +36,12 @@ public class Books extends BestSelling{
         Genre = genre;
     }
 
-    void describeSelf(){
-        super.describeSelf();
-        System.out.print("My name is " + Author + ", the book is in " + Language + " and the genre is " + Genre +".");
+    @Override
+    public String toString() {
+        return
+                " The best selling item is " + getName() + ", the authors name is " + Author +
+                ", the book is in " + Language +
+                " and the genre is " + Genre + ". It was made in "  + getYear() + ". It had " + getSales() + " sales."
+                ;
     }
 }

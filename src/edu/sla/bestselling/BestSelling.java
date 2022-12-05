@@ -48,8 +48,4 @@ public class BestSelling {
     public void setSales(int sales) {
         this.sales = sales;
     }
-
-    void describeSelf(){
-        System.out.println("The best selling item is " + name + ", it was made in " + year + " and had " + sales + " sales. ");
-    }
 }
