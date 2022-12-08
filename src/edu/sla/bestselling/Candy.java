@@ -1,6 +1,10 @@
 package edu.sla.bestselling;
 
-public class Candy extends BestSelling{
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Candy extends BestSelling {
 
     private String brand;
 
@@ -31,8 +35,15 @@ public class Candy extends BestSelling{
 
     @Override
     public String toString() {
-        return " The best selling item is " + getName() + ". This candy was made by " + brand  +
-                " in " + country  + ". It was made in "  + getYear() + ". It had " + getSales() + " sales."
+        return " The best selling item is " + getName() + ". This candy was made by " + brand +
+                " in " + country + ". It was made in " + getYear() + ". It had " + getSales() + " sales."
                 ;
+    }
+    public static void main(String[] args) throws Exception {
+        File text = new File("/Users/dinajdadollani/IdeaProjects/BestSelling/Candy");
+        Scanner sc = new Scanner(text);
+
+        while (sc.hasNextLine())
+            System.out.println(sc.nextLine());
     }
 }
