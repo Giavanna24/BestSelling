@@ -49,7 +49,7 @@ public class Books extends BestSelling{
                 ;
     }
     public static void Read () throws Exception{
-        File text = new File("/Users/giavannarose/IdeaProjects/Best Selling/Books");
+        File text = new File("Books");
         Scanner sc = new Scanner(text);
 
         while(sc.hasNextLine())

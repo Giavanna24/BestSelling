@@ -40,7 +40,7 @@ public class Candy extends BestSelling {
                 ;
     }
     public static void eat() throws Exception {
-        File text = new File("/Users/dinajdadollani/IdeaProjects/BestSelling/Candy");
+        File text = new File("Candy");
         Scanner sc = new Scanner(text);
 
         while (sc.hasNextLine())
