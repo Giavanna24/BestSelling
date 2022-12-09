@@ -39,7 +39,7 @@ public class Candy extends BestSelling {
                 " in " + country + ". It was made in " + getYear() + ". It had " + getSales() + " sales."
                 ;
     }
-    public static void main(String[] args) throws Exception {
+    public static void eat() throws Exception {
         File text = new File("/Users/dinajdadollani/IdeaProjects/BestSelling/Candy");
         Scanner sc = new Scanner(text);
 
