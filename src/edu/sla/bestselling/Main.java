@@ -11,5 +11,6 @@ public class Main {
         for (BestSelling best : BestSelling.getAllBestSelling())
             System.out.println(best);
         Books.Read();
+        Candy.eat();
     }
 }
