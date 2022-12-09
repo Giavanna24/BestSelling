@@ -1,5 +1,6 @@
 package edu.sla.bestselling;
 
+
 public class Main {
 
     public static void main(String[] args) throws Exception{
@@ -9,7 +10,6 @@ public class Main {
 
         for (BestSelling best : BestSelling.getAllBestSelling())
             System.out.println(best);
-
-        Candy.eat();
+        Books.Read();
     }
 }

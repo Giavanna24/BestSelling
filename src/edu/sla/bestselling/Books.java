@@ -1,5 +1,8 @@
 package edu.sla.bestselling;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 public class Books extends BestSelling{
     private String Author;
@@ -44,5 +47,13 @@ public class Books extends BestSelling{
                 ", the book is in " + Language +
                 " and the genre is " + Genre + ". It was made in "  + getYear() + ". It had " + getSales() + " sales."
                 ;
+    }
+    public static void Read () throws Exception{
+        File text = new File("/Users/giavannarose/IdeaProjects/Best Selling/Books");
+        Scanner sc = new Scanner(text);
+
+        while(sc.hasNextLine())
+            System.out.println(sc.nextLine());
+
     }
 }
