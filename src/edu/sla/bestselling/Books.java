@@ -45,7 +45,7 @@ public class Books extends BestSelling{
         return
                 " The best selling item is " + getName() + ", the authors name is " + Author +
                 ", the book is in " + Language +
-                " and the genre is " + Genre + ". It was made in "  + getYear() + ". It had " + getSales() + " sales."
+                " and the genre is " + Genre + ". It was made in "  + getYear() + ". It had " + getSales() + " sales. "
                 ;
     }
     public static void Read (){
