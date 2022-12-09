@@ -48,12 +48,24 @@ public class Books extends BestSelling{
                 " and the genre is " + Genre + ". It was made in "  + getYear() + ". It had " + getSales() + " sales."
                 ;
     }
-    public static void Read () throws Exception{
-        File text = new File("Books");
-        Scanner sc = new Scanner(text);
+    public static void Read (){
+        Scanner sc = null;
+        try {
+            File text = new File("Books");
+             sc = new Scanner(text);
+            String line;
 
-        while(sc.hasNextLine())
-            System.out.println(sc.nextLine());
+            while (sc.hasNextLine()) {
+                line = sc.nextLine();
+                System.out.println(line);
+            }
 
+        } catch (FileNotFoundException e)
+        {
+            e.printStackTrace();
+        }
+        finally {
+            if (sc!= null) sc.close();
+        }
     }
 }
