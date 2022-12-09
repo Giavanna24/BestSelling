@@ -39,11 +39,20 @@ public class Candy extends BestSelling {
                 " in " + country + ". It was made in " + getYear() + ". It had " + getSales() + " sales."
                 ;
     }
-    public static void eat() throws Exception {
-        File text = new File("Candy");
-        Scanner sc = new Scanner(text);
-
-        while (sc.hasNextLine())
-            System.out.println(sc.nextLine());
+    public static void eat() {
+        Scanner sc = null;
+        try {
+            File text = new File("Candy");
+            sc = new Scanner(text);
+            String line;
+            while (sc.hasNextLine()) {
+                line = sc.nextLine();
+                System.out.println(line);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } finally {
+            if (sc != null) sc.close();
+        }
     }
 }
