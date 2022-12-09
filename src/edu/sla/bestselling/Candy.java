@@ -47,7 +47,13 @@ public class Candy extends BestSelling {
             String line;
             while (sc.hasNextLine()) {
                 line = sc.nextLine();
-                System.out.println(line);
+                Scanner lineScanner = new Scanner(line);
+                lineScanner.useDelimiter("\t");
+                while(lineScanner.hasNext()) {
+                    String chunkoData = lineScanner.next();
+                    System.out.println(chunkoData);
+                }
+
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
