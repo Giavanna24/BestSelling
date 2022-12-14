@@ -62,26 +62,24 @@ public class Books extends BestSelling{
                 lineScanner.useDelimiter("\t");
 
                 String name = lineScanner.next();
+                int Year = lineScanner.nextInt();
+                int Sales = lineScanner.nextInt();
                 String Author = lineScanner.next();
                 String Language = lineScanner.next();
-                String Year = lineScanner.next();
                 String Genre = lineScanner.next();
-                //new Books();
+                new Books (name, Year, Sales, Author, Language,Genre);
 
-                 //new Books (name, Author, Language, Year, Genre);
-
-               // while(lineScanner.hasNext()) {
-                   // String chunkofData= lineScanner.next();
-                   // System.out.println(chunkofData);
-                //}
+                while(lineScanner.hasNext()) {
+                   String chunkofData= lineScanner.next();
+                   System.out.println(chunkofData);
+                }
             }
 
 
         } catch (FileNotFoundException e)
         {
             e.printStackTrace();
-        }
-        finally {
+        } finally {
             if (sc!= null) sc.close();
         }
     }

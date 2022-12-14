@@ -47,8 +47,18 @@ public class Candy extends BestSelling {
             String line;
             while (sc.hasNextLine()) {
                 line = sc.nextLine();
+                System.out.println(line);
                 Scanner lineScanner = new Scanner(line);
                 lineScanner.useDelimiter("\t");
+                String name = lineScanner.next();
+                int year = lineScanner.nextInt();
+                int sales = lineScanner.nextInt();
+                String brand = lineScanner.next();
+                String country = lineScanner.next();
+                new Candy(name,year,sales,brand,country);
+
+
+
                 while(lineScanner.hasNext()) {
                     String chunkoData = lineScanner.next();
                     System.out.println(chunkoData);
