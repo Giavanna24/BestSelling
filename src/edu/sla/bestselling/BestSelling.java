@@ -7,10 +7,10 @@ public class BestSelling {
 
         private  String name;
         private  int year;
-        private  int sales;
+        private long sales;
 
 
-    public BestSelling(String name, int year, int sales) {
+    public BestSelling(String name, int year, long sales) {
         this.name = name;
         this.year = year;
         this.sales = sales;
@@ -41,11 +41,11 @@ public class BestSelling {
         this.year = year;
     }
 
-    public int getSales() {
+    public long getSales() {
         return sales;
     }
 
-    public void setSales(int sales) {
+    public void setSales(long sales) {
         this.sales = sales;
     }
 }

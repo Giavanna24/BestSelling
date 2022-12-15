@@ -9,7 +9,7 @@ public class Books extends BestSelling{
     private String Language;
     private String Genre;
 
-    public Books(String name, int year, int sales, String author, String language, String genre) {
+    public Books(String name, int year, long sales, String author, String language, String genre) {
         super(name, year, sales);
         Author = author;
         Language = language;
@@ -62,10 +62,10 @@ public class Books extends BestSelling{
                 lineScanner.useDelimiter("\t");
 
                 String name = lineScanner.next();
-                int Year = lineScanner.nextInt();
-                int Sales = lineScanner.nextInt();
                 String Author = lineScanner.next();
                 String Language = lineScanner.next();
+                int Year = lineScanner.nextInt();
+                long Sales = lineScanner.nextLong();
                 String Genre = lineScanner.next();
                 new Books (name, Year, Sales, Author, Language,Genre);
 

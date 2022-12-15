@@ -11,7 +11,7 @@ public class Candy extends BestSelling {
     private String country;
 
 
-    public Candy(String name, int year, int sales, String brand, String country) {
+    public Candy(String name, int year, long sales, String brand, String country) {
         super(name, year, sales);
         this.brand = brand;
         this.country = country;
@@ -50,11 +50,11 @@ public class Candy extends BestSelling {
                 System.out.println(line);
                 Scanner lineScanner = new Scanner(line);
                 lineScanner.useDelimiter("\t");
-                String name = lineScanner.next();
-                int year = lineScanner.nextInt();
-                int sales = lineScanner.nextInt();
-                String brand = lineScanner.next();
                 String country = lineScanner.next();
+                String brand = lineScanner.next();
+                String name = lineScanner.next();
+                long sales = lineScanner.nextLong();
+                int year = lineScanner.nextInt();
                 new Candy(name,year,sales,brand,country);
 
 
