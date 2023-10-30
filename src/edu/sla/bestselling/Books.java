@@ -69,10 +69,6 @@ public class Books extends BestSelling{
                 String Genre = lineScanner.next();
                 new Books (name, Year, Sales, Author, Language,Genre);
 
-                while(lineScanner.hasNext()) {
-                   String chunkofData= lineScanner.next();
-                   System.out.println(chunkofData);
-                }
             }
 
 

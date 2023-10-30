@@ -38,7 +38,7 @@ public class Candy extends BestSelling {
         return " The best selling item is " + getName() + ". This candy was made by " + brand +
                 " in " + country + ". It was made in " + getYear() + ". It had " + getSales() + " sales."
                 ;
-    }
+        }
     public static void eat() {
         Scanner sc = null;
         try {
